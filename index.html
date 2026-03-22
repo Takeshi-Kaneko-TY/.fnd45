@@ -1,0 +1,103 @@
+<!DOCTYPE html>  <!--  htmlコメントのルール    -->
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>プレゼン用</title>
+  <link rel = "stylesheet" href = "submit.css"> <!--  cssと連携    -->
+  <script src = "submit.js"> </script> <!--  Jsと連携    -->
+</head>
+
+<body>
+  <h1>DIG プログラミング基礎コース課題！</h1>
+  <h2>設備投資予算 変更の理由 申請フォーム </h2>
+  
+</body>
+<div>
+  <p>
+    <h3><label for="da">日付:</label></h3>
+    <input type="text" name="date" id="da"><!--id名はnameの頭文字 -->
+  </p>  
+  <fieldset>
+    <h2><legend>申請者情報</legend></h2>  
+      <p>
+      <h3>部名：<br>
+      <select name="busyo" id="bu"><!--id名はnameの頭文字 --> >
+      <optgroup label="-部署選択-">
+        <option value="0">-選択してください-</option>    
+        <option value="73">73:プレ生 </option>
+        <option value="72">72:ボ生 </option>
+        <option value="74">74:塗成生</option>
+        <option value="">76:車生</option>
+        <option value="75">75:IM</option>
+        <option value="77">77:プラ環</option>
+        <option value="71">71:デジ変</option>
+        <option value="59">59:生企</option>
+        <option value="70">70:生技管</option>
+        <option value="99">その他</option>
+      </optgroup>  
+      </select>
+      </h3>   
+    </p>
+    <p>
+      <h3><label for="nm">担当者:</label></h3>
+      <input type="text" name="namae" size="15" id="nm"><!--id名はnameの頭文字 -->
+    </p>
+    </fieldset>
+  <p>
+    <h3><label for="bn">予算No.:</label></h3>
+    <input type="text" name="budnum" size="20" id="bn"><!--id名はnameの頭文字 -->
+    <h3><label for="kn">決済No.:</label></h3>
+    <input type="text" name="kenum" size="10" id="kn"><!--id名はnameの頭文字 -->
+    <h3><label for="km">件名:</label></h3>
+    <input type="text" name="kenmei" size="40" id="km"><!--id名はnameの頭文字 -->
+  </p>
+  <p>
+    <h3>年度予算変更の種類</h3>
+  </p>
+  <p>
+    <label><input type="radio" name="区分" value="中止" class="cl">中止</label> 
+    <label><input type="radio" name="区分" value="延期" class="cl">延期</label> 
+    <label><input type="radio" name="区分" value="予算減額" class="cl">予算減額</label> 
+    <label><input type="radio" name="区分" value="予算増額" class="cl">予算増額</label>   
+    <label><input type="radio" name="区分" value="追加" class="cl">追加</label>   
+    <label><input type="radio" name="区分" value="前出し" class="cl">前出し</label> 
+    <label><input type="radio" name="区分" value="その他" class="cl" checked>その他</label>   
+  </p>
+  <form name="Calc">  
+    <p>
+      <h3>A:変更前予算<sub>（千円）</sub></h3>
+      <input type="text" name="budgetbefore" value="0" size="15" id="bb"> <!--id はnameの頭文字-->
+    </p>
+    <p>
+      <h3>B:変更後予算<sub>（千円）</sub></h3>
+      <input type="text" name="budgetafter" value="0"  size="15" id="ba">  <!--id はnameの頭文字-->  
+    </p>  
+    <p>
+      <h3>予算変更額(B-A)<sub>（千円）</sub></h3>
+      <input type="text" name="" name="budgetchange" value="0"  size="15" id="bc">
+      <input type="button" value=" 計算！" onclick= "calc(this.form)" > 
+      <input type="reset" value=" Clear ">
+    </p> 
+    <p>  
+      <script>
+        function calc(CL) { CL.budgetchange.value = eval(CL.budgetafter.value) - eval(CL.budgetbefore.value) }
+      </script> 
+    </p>
+  </form>  
+
+  <p>
+    <h3>発生要因</h3>
+    <label><input type="checkbox" name="why" value="own" id="wh">自部署責任</label><!--id はnameの頭文字-->
+    <label><input type="checkbox" name="why" value="other" id="wh">他部署責任</label><!--id はnameの頭文字-->
+    <label><input type="checkbox" name="why" value="sup" id="wh">仕入先責任</label><!--id はnameの頭文字-->
+  </p>
+  <p>
+    <h3>再発防止策を記入</h3>
+    <textarea name="countermeasure" rows="3" cols="100" id="cm">再発防止策</textarea> <!--id はnameの頭文字-->
+  </p>
+  <button>登録</button>
+  </div>
+</html>
