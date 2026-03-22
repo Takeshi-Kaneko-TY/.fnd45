@@ -1,0 +1,93 @@
+  /* cssコメントのルール         */
+h2 { /* 表題  */
+  margin: 10px auto;
+  text-align: left;
+}
+
+div {  /* 入力枠  */
+  margin: 10px auto;
+  width: 1500px;
+  height: 1500px;
+  padding: 10px auto;
+  border-radius: 5px;
+}
+#da { border: 3px solid #999; /* 日付  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+#bu {  border: 3px solid #999; /* 部署  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+#nm { border: 3px solid #999; /* 申請者名  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+}
+#bn { border: 3px solid #999; /* 予算No.  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}  
+#kn { border: 3px solid #999; /* 決済No.  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}  
+#km { border: 3px solid #999; /* 件名  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+}  
+cl { border: 3px solid #999; /* 種類  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: left 
+}
+#bb { border: 3px solid #999; /* 変更前予算額  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: right; 
+}
+#ba { border: 3px solid #999; /* 変更後予算額  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: right; 
+}
+#bc { border: 3px solid #999; /* 予算変更額  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: right 
+}
+#wh { border: 3px solid #999; /* 発生要因  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: right 
+}
+#cm { border: 3px solid #999; /* 再発防止策  */
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px; 
+  text-align: left 
+}
+button{ /* 登録ボタン  */
+  width: 80px;
+  height: 45px;
+  background-color: lightgray;
+  font-size: 20px;
+  border-radius: 8px;
+}
